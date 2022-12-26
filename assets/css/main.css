@@ -2789,33 +2789,19 @@ input, select, textarea {
 /* Contact */
 
 	ul.contact {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
 		list-style: none;
 		padding: 0;
 	}
 
 		ul.contact > li {
 			padding: 0;
-			margin: 0;
-			/* margin: 1.5em 0 0 0; ovo je bilo prije izbacivanja kontakt forma */
+			margin: 1.5em 0 0 0;
 		}
 
-		/* Ovo je dodano zbog izbacivanja forme za kontakt */
-		@media only screen and (max-width: 700px){
-			ul.contact {
-				display:block;
-			}
 
-			ul.contact > li {
-				margin: 1.5em 0 0 0;
-			}
-		}
-
-			ul.contact > li:first-child {
-				margin-top: 0;
-			}
+		ul.contact > li:first-child {
+			margin-top: 0;
+		} 
 
 /* Icons */
 
