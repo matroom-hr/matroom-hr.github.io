@@ -195,17 +195,21 @@
 				<!-- Four -->
 					<section id="four" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Imaš li pitanja?</h2>
-							<p>
+							<h2 class="questions-heading">Imaš li pitanja?</h2>
+							<p class="questions-paragraph">
 								Pošalji mi poruku ili me nazovi. Odgovorit ću ti u najkraćem mogućem roku.
 							</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form
+										action="https://script.google.com/macros/s/AKfycbzBjEtVVXpQHsTb6QkcP8MTbCMakp_MQ8m-RD1UzV7PYnKntYGo9IgLmkzsIbn4l7e8/exec"
+										class="gform"
+										method="post"
+									>
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Ime</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="ime" id="name" />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
@@ -213,13 +217,18 @@
 											</div>
 											<div class="field">
 												<label for="message">Poruka</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<textarea name="poruka" id="message" rows="5"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Pošalji</a></li>
+											<!-- <li><a href="" class="button submit">Pošalji</a></li> -->
+											<li><button class="button submit">Pošalji</button></li>
 										</ul>
 									</form>
+									<div class="thankyou_message" style="display:none;">
+										<h2><em>Hvala ti</em> što si me kontaktirao!
+										  Uskoro ću ti se javiti!</h2>
+									</div>
 								</section>
 								<section>
 									<ul class="contact">
@@ -231,7 +240,7 @@
 										</li>
 										<li>
 											<h3>Email</h3>
-											<span>matroom.poduke@gmail.com</span>
+											<span>info@matroom.hr</span>
 											<!-- <a href="#">matroom.poduke@gmail.com</a> -->
 										</li>
 										<li>
@@ -273,6 +282,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
+
 
 	</body>
 </html>

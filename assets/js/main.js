@@ -31,7 +31,8 @@
 		});
 
 	// Forms.
-
+		
+		/*
 		// Hack: Activate non-input submits.
 			$('form').on('click', '.submit', function(event) {
 
@@ -43,6 +44,7 @@
 					$(this).parents('form').submit();
 
 			});
+			*/
 
 	// Sidebar.
 		if ($sidebar.length > 0) {
