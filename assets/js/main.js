@@ -8,7 +8,9 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$sidebar = $('#sidebar');
+		$sidebar = $('#sidebar'),
+		$submit = $('#submit'),
+		$privacy= $('#privacy');
 
 	// Breakpoints.
 		breakpoints({
@@ -45,6 +47,16 @@
 
 			});
 			*/
+		$privacy.on('change', function(pevent){
+			var checked = pevent.target.checked; 
+			if(checked) {
+				$submit.removeAttr('disabled')
+			}
+			else {
+				console.log("here");
+				$submit.attr('disabled', true)
+			}
+		})
 
 	// Sidebar.
 		if ($sidebar.length > 0) {
