@@ -2,26 +2,22 @@
     text-align: center;
 }
 
-td {
+.price-table td {
     color: white;
 }
 
-td:not(:first-child), th:not(:first-child) {
+.price-table  table :not(:first-child), .price-table table th:not(:first-child) {
     border-left: solid 1px rgba(255, 255, 255, 0.15);
     border-right: solid 1px rgba(255, 255, 255, 0.15);
     text-align: right;
 }
 
-table {
+.price-table table {
     border-collapse: collapse;
     margin-bottom: 0;
 }
 
 .price-table p:first-of-type {
     margin-bottom: 0;
-}
-
-.top-margin {
-    margin-top: 0.44em;
 }
 
